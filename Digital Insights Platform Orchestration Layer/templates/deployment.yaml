@@ -1,0 +1,25 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: payments-api
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        color: blue
+    spec:
+      containers:
+      - name: bgdemo
+        image: payments_api:1.0
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        env:
+        - name: GET_HOSTS_FROM
+          value: dns
+        - name: NAME
+          value: {{ .Values.helloname }}
+        ports:
+        - containerPort: 3000

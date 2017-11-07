@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  Digital Insights Platform Orchestration Layer:
+  - apiVersion: v1
+    created: 2017-11-07T19:13:16.941603342+01:00
+    description: IBM Digital Insights Platform - Orchestration Layer
+    digest: 05dfd5d4e60a24400a0e52a3dcc9d717cc2a6497fd3af50dc1a207baf08d8b8f
+    icon: dip.png
+    name: Digital Insights Platform Orchestration Layer
+    urls:
+    - https://192.168.27.100:8443/helm-repo/charts/Digital%20Insights%20Platform%20Orchestration%20Layer-0.1.0.tgz
+    version: 0.1.0
+generated: 2017-11-07T19:13:16.935782567+01:00

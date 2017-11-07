@@ -1,0 +1,10 @@
+mapiVersion: v1
+kind: Service
+metadata:
+  name: payments-api
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 3000
+  selector:
+    color: blue
